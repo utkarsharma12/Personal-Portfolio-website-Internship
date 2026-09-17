@@ -1,0 +1,22 @@
+{
+  "name": "personal-portfolio-fullstack",
+  "version": "1.0.0",
+  "description": "Full-Stack Personal Portfolio Website with React, Node.js, Express, and MySQL/MongoDB",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node --watch server/server.js",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "nodejs",
+    "express",
+    "mysql",
+    "mongodb",
+    "fullstack"
+  ],
+  "author": "",
+  "license": "MIT"
+}
