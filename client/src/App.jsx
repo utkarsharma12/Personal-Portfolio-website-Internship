@@ -9,14 +9,15 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AdminModal from './components/AdminModal';
 import api from './services/api';
+import { initialProjects, initialSkills, initialExperiences } from './data/initialData';
 import { Loader2 } from 'lucide-react';
 
 export default function App() {
-  const [projects, setProjects] = useState([]);
-  const [skills, setSkills] = useState([]);
-  const [experiences, setExperiences] = useState([]);
-  const [dbStatus, setDbStatus] = useState('connecting');
-  const [loading, setLoading] = useState(true);
+  const [projects, setProjects] = useState(initialProjects);
+  const [skills, setSkills] = useState(initialSkills);
+  const [experiences, setExperiences] = useState(initialExperiences);
+  const [dbStatus, setDbStatus] = useState('connected');
+  const [loading, setLoading] = useState(false);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
 
   const fetchPortfolioData = async () => {
